@@ -41,7 +41,7 @@ public class EventConsumerController {
                     event.getReportType()
             );
 
-            // Ahora se envía DIRECTAMENTE el evento sin wrapper
+            
             emailService.sendReportViewedNotification(event);
 
             return ResponseEntity.ok(Map.of(
