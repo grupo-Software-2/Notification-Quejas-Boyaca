@@ -1,9 +1,9 @@
 package co.edu.uptc.notification.dto;
 
+import java.time.LocalDateTime;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import java.time.LocalDateTime;
 
 public class ReportViewedEventDTO {
 
@@ -26,7 +26,7 @@ public class ReportViewedEventDTO {
     @JsonProperty("totalComplaints")
     private int totalComplaints;
 
-    @JsonProperty("reportType")  // ← IMPORTANTE
+    @JsonProperty("reportType") 
     private String reportType;
 
     @JsonProperty("source")
@@ -35,7 +35,7 @@ public class ReportViewedEventDTO {
     public ReportViewedEventDTO() {
     }
 
-    // GETTERS Y SETTERS - TODOS son necesarios
+    
     public String getEventId() {
         return eventId;
     }
@@ -84,7 +84,7 @@ public class ReportViewedEventDTO {
         this.totalComplaints = totalComplaints;
     }
 
-    // ← ESTE ES CRÍTICO
+    
     public String getReportType() {
         return reportType;
     }
